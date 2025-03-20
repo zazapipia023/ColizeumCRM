@@ -60,8 +60,6 @@ jobs:
         echo "DB_USER=postgres" >> $GITHUB_ENV
         echo "DB_PASSWORD=postgres" >> $GITHUB_ENV
         echo "DB_NAME=postgres" >> $GITHUB_ENV
-        echo "REDIS_HOST=localhost" >> $GITHUB_ENV
-        echo "REDIS_PORT=6379" >> $GITHUB_ENV
 
     - name: Build with Gradle Wrapper
       run: ./gradlew clean build
