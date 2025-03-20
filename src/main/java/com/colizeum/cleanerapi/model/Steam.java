@@ -1,10 +1,7 @@
 package com.colizeum.cleanerapi.model;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,6 +14,7 @@ public class Steam {
 
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name", unique = true)
