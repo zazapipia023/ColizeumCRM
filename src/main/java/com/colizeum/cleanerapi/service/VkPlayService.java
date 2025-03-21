@@ -14,7 +14,7 @@ import java.util.Optional;
 @Transactional(readOnly = true)
 public class VkPlayService {
 
-    private VkPlayRepository repository;
+    private final VkPlayRepository repository;
 
     public VkPlay findOne(String name) {
         Optional<VkPlay> vkPlay = repository.findByName(name);

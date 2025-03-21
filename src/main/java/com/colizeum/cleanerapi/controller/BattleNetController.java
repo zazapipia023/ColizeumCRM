@@ -2,6 +2,7 @@ package com.colizeum.cleanerapi.controller;
 
 import com.colizeum.cleanerapi.model.BattleNet;
 import com.colizeum.cleanerapi.service.BattleNetService;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

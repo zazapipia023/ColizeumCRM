@@ -2,6 +2,7 @@ package com.colizeum.cleanerapi.controller;
 
 import com.colizeum.cleanerapi.model.VkPlay;
 import com.colizeum.cleanerapi.service.VkPlayService;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

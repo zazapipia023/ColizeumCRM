@@ -14,7 +14,7 @@ import java.util.Optional;
 @Transactional(readOnly = true)
 public class UbisoftService {
 
-    private UbisoftRepository repository;
+    private final UbisoftRepository repository;
 
     public Ubisoft findOne(String name) {
         Optional<Ubisoft> ubisoft = repository.findByName(name);

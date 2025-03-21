@@ -14,7 +14,7 @@ import java.util.Optional;
 @Transactional(readOnly = true)
 public class EpicGamesService {
 
-    private EpicGamesRepository repository;
+    private final EpicGamesRepository repository;
 
     public EpicGames findOne(String name) {
         Optional<EpicGames> epicGames = repository.findByName(name);

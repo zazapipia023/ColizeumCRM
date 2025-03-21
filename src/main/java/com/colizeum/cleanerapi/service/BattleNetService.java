@@ -14,7 +14,7 @@ import java.util.Optional;
 @Transactional(readOnly = true)
 public class BattleNetService {
 
-    private BattleNetRepository repository;
+    private final BattleNetRepository repository;
 
     public BattleNet findOne(String name) {
         Optional<BattleNet> battleNet = repository.findByName(name);
